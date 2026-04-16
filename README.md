@@ -35,6 +35,7 @@ Monitoring           Log Analytics · Azure Monitor · KQL · Application Insigh
 **Certifications**
 - AZ-900 · Microsoft Azure Fundamentals ✅
 - Security+ (SY0-701) ✅
+- AZ-104 · Microsoft Azure Administrator — targeted next
 - AZ-500 · Microsoft Azure Security Engineer — targeted next
 
 ---
