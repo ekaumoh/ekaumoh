@@ -1,4 +1,4 @@
-## Ekaette Q. Umoh
+## Ekaette Umoh
 
 **Cloud Engineer → Security** &nbsp;|&nbsp; ECS Federal &nbsp;|&nbsp; Baltimore, MD &nbsp;|&nbsp; Cleared
 
@@ -6,7 +6,7 @@
 
 ---
 
-I'm a cloud engineer with a security lens — I build the infrastructure, then make sure it's hardened. My day-to-day sits at the intersection of identity, automation, and compliance in M365 GovCloud environments. I write Terraform, not just click through portals. I write KQL detection rules, not just read dashboards.
+I'm a cloud engineer with a security lens! I build the infrastructure, then make sure it's hardened. My day-to-day sits at the intersection of identity, automation, and compliance in M365 GovCloud environments. During my spare time using my home sandbox, I write Terraform; not just click through portals. I write KQL detection rules; not just read dashboards.
 
 Currently focused on growing into cloud security engineering and SOC/detection engineering roles where both skill sets matter.
 
