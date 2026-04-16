@@ -1,20 +1,46 @@
-## Ekaette Q. Umoh · Cloud Security Engineer
+## Ekaette Q. Umoh
 
-Baltimore, MD &nbsp;·&nbsp; [ekaetteumoh.cloud](https://ekaetteumoh.cloud) &nbsp;·&nbsp; [ekaette@ekaetteumoh.cloud](mailto:ekaette@ekaetteumoh.cloud)
+**Cloud Engineer → Security** &nbsp;|&nbsp; ECS Federal &nbsp;|&nbsp; Baltimore, MD &nbsp;|&nbsp; TS/SCI Cleared
 
----
-
-Cloud security engineer focused on identity hardening, M365/Azure automation, and infrastructure-as-code. Most of my work touches Entra ID, Conditional Access, and eliminating manual toil with PowerShell and Graph API — primarily in GCC High GovCloud environments.
-
-**What I'm publishing here:**
-
-- `terraform/conditional-access` — Full 11-policy Zero Trust CA stack, IaC-deployed
-- `powershell/user-lifecycle` — Offboarding automation via Graph API (managed identity auth)
-- `kql/sentinel-analytics` — Credential spray, MFA fatigue, and impossible travel detection rules
-
-**Stack:** Entra ID · Azure · M365 GCC High · Terraform · PowerShell · Graph API · KQL · Microsoft Sentinel · Intune · NIST 800-171 · CMMC
+[ekaetteumoh.cloud](https://ekaetteumoh.cloud) &nbsp;·&nbsp; [ekaette@ekaetteumoh.cloud](mailto:ekaette@ekaetteumoh.cloud)
 
 ---
 
-**Available for freelance engagements** — M365 setup, Zero Trust baselines, and ongoing cloud ops.  
-→ [View packages and pricing](https://ekaetteumoh.cloud/#packages)
+I'm a cloud engineer with a security lens — I build the infrastructure, then make sure it's hardened. My day-to-day sits at the intersection of identity, automation, and compliance in M365 GovCloud environments. I write Terraform, not just click through portals. I write KQL detection rules, not just read dashboards.
+
+Currently focused on growing into cloud security engineering and SOC/detection engineering roles where both skill sets matter.
+
+---
+
+**What I work with**
+
+```
+Identity & Access    Entra ID · PIM · Conditional Access · ABAC · App Registrations
+Cloud Platforms      Azure / GCC High · GCP · M365 Multi-Tenant
+Automation & IaC     Terraform · PowerShell · Graph API · Python · Azure Automation
+Security             Microsoft Sentinel · KQL · Intune · NIST 800-171 · CMMC · STIG
+Monitoring           Log Analytics · Azure Monitor · KQL · Application Insights
+```
+
+---
+
+**What I'm building here**
+
+| Repo | What it demonstrates |
+|---|---|
+| [`lets-build`](https://github.com/ekaumoh/lets-build) | Zero Trust CA stack (Terraform), user lifecycle automation (PowerShell + Graph API), Sentinel detection rules (KQL) |
+
+---
+
+**Certifications**
+- AZ-900 · Microsoft Azure Fundamentals ✅
+- Security+ (SY0-701) — in progress · DoD 8570 IAT II
+- AZ-500 · Microsoft Azure Security Engineer — targeted next
+
+---
+
+**Background**
+
+Transitioned into cloud engineering from a Service Desk Analyst role — which means I understand how things break from the user side and how to prevent it on the infrastructure side. Currently working in a GCC High GovCloud environment supporting M365 multi-tenant administration, identity governance, and automation for federal clients.
+
+Active TS/SCI clearance.
