@@ -41,4 +41,4 @@ Monitoring           Log Analytics · Azure Monitor · KQL · Application Insigh
 
 **Background**
 
-Transitioned into cloud engineering from a Service Desk Analyst role — which means I understand how things break from the user side and how to prevent it on the infrastructure side. Currently working in a GCC High GovCloud environment supporting M365 multi-tenant administration, identity governance, and automation for federal clients.
+Transitioned into cloud engineering from a Service Desk Analyst role which means I understand how things break from the user side and how to prevent it on the infrastructure side. Currently working in a GCC High GovCloud environment supporting M365 multi-tenant administration, identity governance, and automation for federal clients.
