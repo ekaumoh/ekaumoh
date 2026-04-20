@@ -1,6 +1,6 @@
 ## Ekaette Umoh
 
-**Cloud Engineer → Security** &nbsp;|&nbsp; ECS Federal &nbsp;|&nbsp; Baltimore, MD &nbsp;|&nbsp; Cleared
+**Cloud Engineer → Security** &nbsp;|&nbsp; DC-MD-VA &nbsp;|&nbsp; Baltimore, MD &nbsp;|&nbsp; Cleared
 
 equmoh@gmail.com &nbsp;·&nbsp; [admin@ekaetteumoh.cloud](mailto:admin@ekaetteumoh.cloud)
 
