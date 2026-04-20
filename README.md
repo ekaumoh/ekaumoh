@@ -1,6 +1,6 @@
 ## Ekaette Umoh
 
-**Cloud Engineer → Security** &nbsp;|&nbsp; DC-MD-VA &nbsp;|&nbsp; Baltimore, MD &nbsp;|&nbsp; Cleared
+**Cloud Engineer → Security** &nbsp;|&nbsp; DC-MD-VA &nbsp;|&nbsp; Cleared &nbsp;|&nbsp; Ready For Any Challenge
 
 equmoh@gmail.com &nbsp;·&nbsp; [admin@ekaetteumoh.cloud](mailto:admin@ekaetteumoh.cloud)
 
