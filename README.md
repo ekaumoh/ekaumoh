@@ -37,7 +37,7 @@ Monitoring           Log Analytics · Azure Monitor · KQL · Application Insigh
 - Security+ (SY0-701) ✅
 - AZ-104 · Microsoft Azure Administrator — targeted next
 - AZ-500 · Microsoft Azure Security Engineer — targeted next
-- CLF-C02 · AWS Certified Cloud Practitioner
+- CLF-C02 · AWS Certified Cloud Practitioner — targeted next
 
 ---
 
