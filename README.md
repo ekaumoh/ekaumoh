@@ -71,29 +71,6 @@ A deliberately exposed honeypot designed to attract real-world SSH attack traffi
 
 ---
 
-### 🎵 Producer Taste Mapper
-`Azure Functions` `Python` `Cosmos DB` `Key Vault` `App Insights` `Terraform` `Last.fm API`
-
-Serverless Azure app that ingests music listening history, builds a weighted genre fingerprint, and ranks music producers whose sound matches your taste.
-
-- Three HTTP-triggered Python Functions: `/api/taste` (ingest) → `/api/profile` (fingerprint) → `/api/producers` (ranked matches)
-- Infrastructure fully provisioned with modular Terraform: Storage, Cosmos DB, Key Vault with Managed Identity, App Insights, and Function App
-- Redesigned frontend with coral/violet gradient UI, spotlight producer card, genre tag pills, and ranked results
-
----
-
-### ✈️ Equalizr — Drone Industry Business Intelligence
-`React` `AWS` `Supabase` `EKS` `SAM.gov API` `Grants.gov API`
-
-SaaS platform for the drone industry surfacing procurement opportunities, pipeline tracking, and market intelligence.
-
-- React SPA frontend with opportunity inbox, pipeline kanban, leads, news feed, and weekly reports
-- Staged backend architecture: Supabase (beta) → serverless (growth) → EKS (scale)
-- Data sourcing from SAM.gov, Grants.gov, FAA RSS, and construction pipeline providers
-- Platform engineering layer maps directly to the three-repo EKS setup
-
----
-
 ## 📚 Background
 
 Before going deep on cloud security and platform engineering, I built hands-on experience across:
