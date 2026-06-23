@@ -27,7 +27,7 @@ I learn by building. Every project here is hands-on, documented, and designed to
 
 ## 🚀 Featured Projects
 
-### 🛡️ Secure EKS Platform — GitOps, Policy Gates & Runtime Defense
+### 🛡️ Secure EKS Platform | GitOps, Policy Gates & Runtime Defense
 `AWS` `EKS` `Terraform` `ArgoCD` `Kustomize` `Trivy` `GitHub Actions` `OIDC` `ECR`
 
 A full-stack portfolio piece covering platform engineering and cloud security end to end.
