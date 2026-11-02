@@ -1,92 +1,83 @@
 # Hey, I'm Ekaette 👋
 
-Cloud engineer transitioning into **cloud security and platform engineering** building production-grade infrastructure on AWS and Azure with a focus on DevSecOps, GitOps, and compliance-aligned platforms.
+Cloud engineer building and securing **Terraform-provisioned infrastructure at IL5** across Azure Government and AWS GovCloud for Department of Defense programs.
 
-I learn by building. Every project here is hands-on, documented, and designed to reflect real-world engineering decisions.
+Day to day that means: infrastructure as code, STIG hardening and the automation that keeps it hardened, GitLab CI/CD pipelines, and the SOPs that keep a team building the same way twice. This profile is where I work the same problems in the open.
+
+**Active TS/SCI** · **Security+ CE (DoD 8570 IAT II)**
 
 ---
 
 ## 🔧 What I Work With
 
 **Cloud**
-`AWS` `Azure` `EKS` `AKS` `ECS` `ECR` `S3` `IAM` `Lambda` `EventBridge` `Azure Functions` `App Services` `Cosmos DB` `Key Vault` `Log Analytics` `Microsoft Sentinel`
+`Azure Government` `AWS GovCloud` `Azure` `AWS` `AKS` `EKS` `ECS` `ECR` `Entra ID` `Key Vault` `Log Analytics` `Microsoft Sentinel`
 
 **Infrastructure as Code**
-`Terraform` `Modular multi-environment projects` `Checkov` `GitHub Actions OIDC`
+`Terraform` `Modular multi-environment projects` `Remote state + locking` `Checkov` `OIDC federation`
+
+**CI/CD**
+`GitLab CI` `GitLab administration & migration` `GitHub Actions` `Policy gates` `Shift-left scanning`
+
+**Security & Compliance**
+`DISA STIG` `Compliance drift automation` `NIST SP 800-53` `NIST 800-171` `FedRAMP High` `IL4 / IL5` `Zero Trust` `ABAC` `PIM` `CAC / PKI`
 
 **Containers & GitOps**
 `Docker` `Kubernetes` `ArgoCD` `Kustomize` `Trivy` `Pod Security Standards`
 
-**Security & Compliance**
-`NIST SP 800-53` `STIG hardening` `ATO readiness` `IRSA` `Workload Identity` `Entra ID` `ABAC` `Shift-left security`
-
 **Languages & Runtimes**
-`Python` `Node.js` `Bash` `KQL` `HCL`
+`Python` `PowerShell` `Bash` `HCL` `KQL`
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Public Projects
 
-### 🛡️ Secure EKS Platform | GitOps, Policy Gates & Runtime Defense
-`AWS` `EKS` `Terraform` `ArgoCD` `Kustomize` `Trivy` `GitHub Actions` `OIDC` `ECR`
+### 🛡️ Azure DevSecOps Pipeline
+`Terraform` `Checkov` `GitHub Actions` `OIDC` `Azure RBAC` `Defender for Storage`
 
-A full-stack portfolio piece covering platform engineering and cloud security end to end.
+A shift-left pipeline that blocks insecure Terraform before it reaches Azure. Every PR triggers a Checkov scan against CIS/NIST controls; branch protection makes the gate hard enforcement rather than advisory. Clean code deploys through passwordless OIDC federation to an RG-scoped least-privilege identity, with state in an Azure blob backend using AzureAD auth — no access keys anywhere.
 
-- Provisioned a private EKS 1.30 cluster with VPC, Spot worker nodes, IRSA, and AWS Load Balancer Controller
-- Enforced Pod Security Standards (`baseline`/`restricted`), ResourceQuota, and LimitRange at the namespace level
-- Built a GitOps pipeline across three repos (`eks-infra` / `eks-platform` / `eks-manifests`) with clean separation of concerns — Terraform owns cloud infra, ArgoCD owns everything inside the cluster
-- CI pipeline performs Docker build → Trivy image scan (hard-block on CRITICAL/HIGH CVEs) → ECR push → Kustomize manifest update via fine-grained PAT
-- ArgoCD watches `eks-manifests` with auto-sync, prune, and self-heal enabled
-
-**Repos:** [`eks-infra`](https://github.com/ekaumoh/eks-infra) · [`eks-platform`](https://github.com/ekaumoh/eks-platform) · [`eks-manifests`](https://github.com/ekaumoh/eks-manifests)
-
----
-
-### 🪖 DoD Container Modernization Platform
-`Azure` `AKS` `Terraform` `NIST SP 800-53` `GitHub Actions` `OIDC`
-
-Terraform project targeting Azure AKS with IL2–IL4 compliance alignment and a GovCloud migration path.
-
-- Six reusable modules: networking, AKS, ACR, Key Vault, monitoring, and Azure Policy
-- Hub-spoke VNet topology with Azure Firewall (Standard dev / Premium + IDPS prod)
-- Private AKS cluster with Entra ID RBAC, Workload Identity, Defender for Containers
-- HSM-backed CMK keys, ACR Premium with content trust, Log Analytics with KQL alert rules
-- Azure Policy enforces the built-in NIST SP 800-53 Rev 5 initiative across environments
+- 11 Checkov controls validated per run; three soft-failed with documented justification
+- OIDC federation (GitHub ↔ Entra ID) — no stored secrets in the pipeline
+- Terraform state with `use_azuread_auth` + `use_oidc`, no account keys
+- Defender for Storage for runtime behavioral monitoring; Sentinel unified to Defender XDR
 
 **Repo:** [`devsecops-azure-pipeline`](https://github.com/ekaumoh/devsecops-azure-pipeline)
 
 ---
 
-### 🍯 Azure Cowrie SSH Honeypot
-`Azure` `Terraform` `Log Analytics` `AMA` `DCR` `KQL` `Azure Monitor Workbooks` `Microsoft Sentinel`
+## 🔒 Private Work
 
-A deliberately exposed honeypot designed to attract real-world SSH attack traffic and surface attacker behavior through Azure-native observability tooling.
+Several projects live in private repos — some because they mirror patterns from cleared environments, some because they are still being hardened before I open them. Happy to walk through any of these in an interview.
 
-- Ubuntu 22.04 VM with iptables NAT rules routing port 22 → Cowrie on port 2222
-- Logs shipped via rsyslog → Azure Monitor Agent → DCR → Log Analytics Workspace
-- Azure Monitor Workbook with GeoIP attack map and hourly attempt charts built from KQL
-- Microsoft Sentinel integration planned: onboarding resource + scheduled analytic rule for credential spray detection
-
-**Repo:** [`lets-build`](https://github.com/ekaumoh/lets-build)
-
----
-
-## 📚 Background
-
-Before going deep on cloud security and platform engineering, I built hands-on experience across:
-
-- **Azure identity and access**: Entra ID, ABAC with custom security attributes, Workload Identity, Microsoft Graph API for automated group management
-- **Serverless on Azure**: Azure Functions (Node.js + Python), Logic Apps, Cosmos DB, App Services including production debugging of deployment failures, native dependency issues, and storage account key rotation
-- **Linux fundamentals**: filesystem hierarchy, systemd, user/permission management, bash scripting, log analysis, and STIG-flavored security hardening
-- **DevSecOps pipelines**: GitHub Actions CI/CD on both AWS (OIDC → ECR → ECS) and Azure (service principal + OIDC → AKS), Checkov IaC scanning with `.checkov.yaml` configuration, Trivy image scanning
+| Project | Stack |
+|---|---|
+| Secure EKS Platform — GitOps & runtime defense | EKS 1.30 · Terraform · ArgoCD · Kustomize · Trivy · IRSA |
+| AWS Container Platform — ECS Fargate | Terraform · ECS · ECR · ALB · split task/execution IAM roles |
+| AWS DevSecOps Pipeline | Terraform · Checkov · OIDC · AWS Config · CloudTrail · GuardDuty |
+| Azure Cowrie SSH Honeypot | Terraform · Cowrie · AMA · DCR · Log Analytics · Sentinel · KQL |
+| Zero Trust Conditional Access Stack | Terraform `azuread` · Entra ID · 11 CA policies as code |
+| User Lifecycle Automation | PowerShell · Microsoft Graph API · Azure Automation |
 
 ---
 
 ## 📄 Currently Building
 
-- [ ] End-to-end EKS pipeline test with ArgoCD Application objects
-- [ ] Microsoft Sentinel integration for Cowrie honeypot (credential spray analytic rule)
-- [ ] Architecture Decision Records for IL-environment design choices
+- [ ] GitLab CI equivalent of the Checkov gate — `.gitlab-ci.yml` with Terraform plan/apply stages and policy enforcement
+- [ ] STIG remediation automation — scripted hardening with before/after compliance evidence
+- [ ] Terraform module library targeting Azure Government and AWS GovCloud endpoints
+- [ ] Zero Trust Identity Platform — SAML/OIDC federation, OPA ABAC enforcement, NIST 800-53 / 800-63 control mapping
+
+---
+
+## 📚 Background
+
+Service desk → cloud engineering → DoD platform work. Along the way:
+
+- **Identity:** Entra ID, ABAC with custom security attributes, PIM, Conditional Access as code, Microsoft Graph API automation, CAC/PKI credentialing in IL5
+- **Platform:** M365 GCC High multi-tenant administration, domain controllers and GPO migration, KASM server builds with LDAPS-backed AD auth
+- **Automation:** PowerShell and Python against Graph and REST APIs — bulk identity operations, reporting, and a GitLab migration client that moves projects and issue histories across a disconnected boundary
+- **Documentation:** runbooks, SOPs, and onboarding guides that let a team survive personnel changes — the work I am most consistently told is missing elsewhere
 
 ---
 
