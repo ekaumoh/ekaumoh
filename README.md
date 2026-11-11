@@ -4,7 +4,7 @@ Cloud engineer building and securing **Terraform-provisioned infrastructure at I
 
 Day to day that means: infrastructure as code, STIG hardening and the automation that keeps it hardened, GitLab CI/CD pipelines, and the SOPs that keep a team building the same way twice. This profile is where I work the same problems in the open.
 
-**Active TS/SCI** · **Security+ CE (DoD 8570 IAT II)**
+**Cleared Professional** · **Security+ CE (DoD 8570 IAT II)**
 
 ---
 
