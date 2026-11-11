@@ -58,6 +58,7 @@ Several projects live in private repos — some because they mirror patterns fro
 | Azure Cowrie SSH Honeypot | Terraform · Cowrie · AMA · DCR · Log Analytics · Sentinel · KQL |
 | Zero Trust Conditional Access Stack | Terraform `azuread` · Entra ID · 11 CA policies as code |
 | User Lifecycle Automation | PowerShell · Microsoft Graph API · Azure Automation |
+| DoD Container Modernization Platform | Azure AKS · Terraform · Azure Policy · NIST SP 800-53 Rev 5 |
 
 ---
 
